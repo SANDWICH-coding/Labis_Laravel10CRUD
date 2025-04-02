@@ -5,7 +5,7 @@
     <div class="card">
         <div class="card-header">
             <h2>
-                Laravel 10 CRUD – (Insert your full name here)
+                Laravel 10 CRUD – LANCE DOMINIC S. LABIS
                 <a class="btn btn-primary float-end" href="{{ route('products.create') }}"> Create New Product</a>
             </h2>
         </div>
@@ -26,7 +26,7 @@
                 </tr>
                 @foreach ($products as $product)
                 <tr>
-                    <td>{{ ++$i }}</td>
+                    <td>{{ $product->id }}</td>
                     <td>{{ $product->name }}</td>
                     <td>{{ $product->price }}</td>
                     <td>{{ $product->description }}</td>
